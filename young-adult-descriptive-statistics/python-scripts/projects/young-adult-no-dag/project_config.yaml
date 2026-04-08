@@ -1,0 +1,17 @@
+# Project configuration for young-adult-2026 cohort
+# This file overrides settings from default_config.yaml
+
+project_name: "young-adult-2026"
+description: "Young adult MIMIC-IV cohort analysis - patients aged 18-45"
+
+# Input file names (relative to raw-queries-results/)
+input_files:
+  index_admissions: "index_adm_table_13Feb26.csv"
+  baseline_admissions: "baseline_adm_table_13Feb26.csv"
+  baseline_diagnoses: "baseline_dx_table_13Feb26.csv"
+  icu_chartevents: "baseline_icu_chart_table_13Feb26.csv"
+  omr: "baseline_omr_table_13Feb26.csv"
+
+# Override synthesis settings if needed
+# synthesis:
+#   ctgan_epochs: 500  # More epochs for this project

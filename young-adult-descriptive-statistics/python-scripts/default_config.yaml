@@ -1,0 +1,18 @@
+# Default configuration for MIMIC-IV cohort analysis pipeline
+# These values can be overridden in project-specific project_config.yaml files
+
+synthesis:
+  # CTGAN settings
+  ctgan_epochs: 300
+  ctgan_batch_size: 500
+
+  # Bayesian Network settings
+  bayesian_epsilon: 0.1   # Differential privacy parameter (0 = max privacy, inf = no privacy)
+  bayesian_degree: 2      # Max parents per node in the Bayesian network
+
+  # Reproducibility
+  random_seed: 42
+
+output:
+  # Use ISO date format (YYYY-MM-DD) in output filenames
+  use_iso_date: true
